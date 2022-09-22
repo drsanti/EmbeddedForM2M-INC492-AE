@@ -37,6 +37,7 @@
 		"DOUT",
 		"FOSC",
 		"libpic",
+		"microcontroller",
 		"OCRC",
 		"OCRS",
 		"PORTB",

@@ -15,15 +15,13 @@
 // 3. Compile using ecc-pic24-cli -build
 // 4. Restart the simulator
 
-#include <bsp.h>
-
 int main(void)
 {
 	Mcu_Init();
 
 	Uart1_Init(115200, 64, 64);
 
-	Uart1_Printf("Hello, World\r\n");
+	Uart1_Printf("Hello INC-AE\r\n");
 
 	while (1)
 	{

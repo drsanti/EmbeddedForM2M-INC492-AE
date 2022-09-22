@@ -49,7 +49,7 @@ To compile the `main.c` to `firmware.hex`, the following steps are required:
 
 1) Run the `Proteus` using `Run as administrator`.
 
-2) Open the circuit saved in the `circuit` directory.
+2) Open the `pic24_board_circuit.pdsprj` saved in the `circuit` directory.
 
 3) Double-click on the MCU, and browse to the `firmware.hex`.
 

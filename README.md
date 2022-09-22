@@ -30,3 +30,28 @@ After the three software tools are installed, the activation process is required
 1) go to `C:\ecc-lab\tools`.
 
 2) run the `ecc-tools-manager-gui.exe` (run it using `run as administrator`), then click `Activate` button.
+
+---
+
+## Code Compilation
+
+To compile the `main.c` to `firmware.hex`, the following steps are required:
+
+1) Right-click on the `main.c` and choose `Open in Integrated Terminal`.
+
+2) Run the command `ecc-pic24-cli -build`.
+
+>The `firmware.hex` will be saved in the `./output` directory.
+
+---
+
+## Simulation
+
+1) Run the `Proteus` using `Run as administrator`.
+
+2) Open the circuit saved in the `circuit` directory.
+
+3) Double-click on the MCU, and browse to the `firmware.hex`.
+
+4) Run the simulator and check the result.
+

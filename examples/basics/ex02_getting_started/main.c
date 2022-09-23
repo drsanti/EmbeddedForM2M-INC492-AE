@@ -1,31 +1,29 @@
 
 #include <bsp.h>
 
-void psw0()
+
+void led0_on()
 {
-	Uart1_Printf("PSW0 ON\r\n");
-	// Led0_Inv();
+	Uart1_Printf("LED0 ON\r\n");
 	Led0_Set();
 }
 
-void psw3()
+void led0_off()
 {
-	Uart1_Printf("PSW3 OFF\r\n");
-	// Led3_Inv();
+	Uart1_Printf("LED1 OFF\r\n");
 	Led0_Clr();
 }
 
 int main()
 {
-	Mcu_Init();
-	Uart1_Init(115200, 64, 64);
+	System_Init();
 
-	Psw_SetKeyDownCallback(PSW_ID_0, psw0);
-	Psw_SetKeyDownCallback(PSW_ID_3, psw3);
+	Uart1_Printf("INFO:\r\n");
+	Uart1_Printf(" - SW0: LED0 ON\r\n");
+	Uart1_Printf(" - SW3: LED0 OFF\r\n");
 
-	while (1)
-	{
-		PSW_KeyTickedExecutor();
-	}
-	return 0;
+	Psw_SetKeyDownCallback(PSW_ID_0, led0_on);
+	Psw_SetKeyDownCallback(PSW_ID_3, led0_off);
+
+	System_Start();
 }

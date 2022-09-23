@@ -37,8 +37,24 @@ Command:
 
 Archive member included because of file (symbol)
 
+../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Main.o)
+                              ./output/objects/main.o (_BSP_TickIsrExecutor)
 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Mcu.o)
                               ./output/objects/main.o (_Mcu_Init)
+../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_SysTick.o)
+                              ./output/objects/main.o (_Sys_IsrPerformTick)
+../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_PswKey.o)
+                              ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Main.o) (_PSW_KeyTickedExecutor)
+../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Beep.o)
+                              ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Main.o) (_BEEP_TickedExecutor)
+../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Adc.o)
+                              ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Main.o) (_ADC_TickedExecutor)
+../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_LedBlink.o)
+                              ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Main.o) (_LED_BlinkTickedExecutor)
+../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Led.o)
+                              ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_LedBlink.o) (_Led_Set)
+../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Psw.o)
+                              ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_PswKey.o) (_Psw_Get)
 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Uart.o)
                               ./output/objects/main.o (_Uart1_Init)
 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Queue.o)
@@ -54,11 +70,19 @@ c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-pic30-elf.a(crt_sta
 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(addsf3.eo)
                               ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Uart.o) (___subsf3)
 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(divsf3.eo)
-                              ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Uart.o) (___divsf3)
+                              ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_SysTick.o) (___divsf3)
+c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(feqltle.eo)
+                              ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Beep.o) (___ltsf2)
+c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(fgtge.eo)
+                              ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Beep.o) (___gtsf2)
 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(fixunssfsi.eo)
-                              ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Uart.o) (___fixunssfsi)
+                              ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Beep.o) (___fixunssfsi)
+c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(floatsisf.eo)
+                              ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Adc.o) (___floatsisf)
 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(floatunsisf.eo)
-                              ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Uart.o) (___floatunsisf)
+                              ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_SysTick.o) (___floatunsisf)
+c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(fne.eo)
+                              ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Beep.o) (___nesf2)
 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(fpack.eo)
                               c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(addsf3.eo) (__fpack)
 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(funpack.eo)
@@ -67,6 +91,12 @@ c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(funpack2.eo)
                               c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(addsf3.eo) (__funpack2)
 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(futil.eo)
                               c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(addsf3.eo) (__fPropagateNaN)
+c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(mulsf3.eo)
+                              ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Beep.o) (___mulsf3)
+c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(fcompare.eo)
+                              c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(feqltle.eo) (__fcompare)
+c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(floatdisf.eo)
+                              c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(floatsisf.eo) (___floatdisf)
 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(floatundisf.eo)
                               c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(floatunsisf.eo) (___floatundisf)
 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(free.XX_eo)
@@ -169,333 +199,460 @@ Default Scalar Model: Small
 
 section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
-.text                        0x200              0x1ea2          0x2df3  (11763)
-.const                      0x20a2                0x54            0x7e  (126)
-.text                       0x20f6               0xf20          0x16b0  (5808)
-.dinit                      0x3016                0xb2           0x10b  (267)
-.text                       0x30c8                0x80            0xc0  (192)
+.text                        0x200              0x1fae          0x2f85  (12165)
+.const                      0x21ae                0xd0           0x138  (312)
+.text                       0x227e              0x1fb0          0x2f88  (12168)
+.dinit                      0x422e                0xe2           0x153  (339)
+.text                       0x4310               0x130           0x1c8  (456)
 
-                 Total "program" memory used (bytes):         0x46ec  (18156) 36%
+                 Total "program" memory used (bytes):         0x6360  (25440) 50%
 
 
 "data" Memory  [Origin = 0x800, Length = 0x2000]
 
 section                    address      alignment gaps    total length  (dec)
 -------                    -------      --------------    -------------------
-.data                        0x800                   0            0x7a  (122)
-.bss                         0x87a                   0            0x74  (116)
-.data                        0x8ee                   0            0x3c  (60)
-.bss                         0x92a                   0             0x4  (4)
-.data                        0x92e                   0             0x4  (4)
-.bss                         0x932                   0             0x2  (2)
-.heap                        0x934                   0           0xc18  (3096)
+.nbss                        0x800                   0            0x10  (16)
+.data                        0x810                   0            0x7a  (122)
+.bss                         0x88a                   0           0x174  (372)
+.data                        0x9fe                   0            0x3c  (60)
+.bss                         0xa3a                   0            0x1e  (30)
+.data                        0xa58                   0             0x4  (4)
+.bss                         0xa5c                   0             0x2  (2)
+.heap                        0xa5e                   0           0xc18  (3096)
 
-                 Total "data" memory used (bytes):          0xd4c  (3404) 41%
+                 Total "data" memory used (bytes):          0xe76  (3702) 45%
 
 
 Dynamic Memory Usage
 
 region                     address                      maximum length  (dec)
 ------                     -------                      ---------------------
-heap                         0x934                               0xc18  (3096)
-stack                       0x154c                              0x12b4  (4788)
+heap                         0xa5e                               0xc18  (3096)
+stack                       0x1676                              0x118a  (4490)
 
-                 Maximum dynamic memory (bytes):         0x1ecc  (7884)
+                 Maximum dynamic memory (bytes):         0x1da2  (7586)
 
 Info: Project is using a large data memory model when small data memory model is sufficient.
 
 
 External Symbols in Data Memory (by address):
 
-                    0x087a                  _u1
-                    0x089c                  _u2
-                    0x08be                  _u1rxqueue
-                    0x08ca                  _u1txqueue
-                    0x08d6                  _u2rxqueue
-                    0x08e2                  _u2txqueue
-                    0x092a                  __Aldata
-                    0x092e                  __Size_block
-                    0x0932                  ___curbrk
+                    0x088a                  _u1
+                    0x08ac                  _u2
+                    0x08ce                  _u1rxqueue
+                    0x08da                  _u1txqueue
+                    0x08e6                  _u2rxqueue
+                    0x08f2                  _u2txqueue
+                    0x0a54                  __Aldata
+                    0x0a58                  __Size_block
+                    0x0a5c                  ___curbrk
 
 External Symbols in Data Memory (by name):
 
-                    0x092a                  __Aldata
-                    0x092e                  __Size_block
-                    0x0932                  ___curbrk
-                    0x087a                  _u1
-                    0x08be                  _u1rxqueue
-                    0x08ca                  _u1txqueue
-                    0x089c                  _u2
-                    0x08d6                  _u2rxqueue
-                    0x08e2                  _u2txqueue
+                    0x0a54                  __Aldata
+                    0x0a58                  __Size_block
+                    0x0a5c                  ___curbrk
+                    0x088a                  _u1
+                    0x08ce                  _u1rxqueue
+                    0x08da                  _u1txqueue
+                    0x08ac                  _u2
+                    0x08e6                  _u2rxqueue
+                    0x08f2                  _u2txqueue
 
 External Symbols in Program Memory (by address):
 
                   0x000200                  __resetPRI
                   0x00023c                  __psv_init
-                  0x000252                  __data_init
                   0x000252                  __data_init_standard
-                  0x0002cc                  __U1RXInterrupt
-                  0x000362                  __U2RXInterrupt
-                  0x0003f8                  __U1TXInterrupt
-                  0x00040c                  __U2TXInterrupt
-                  0x000420                  __DefaultInterrupt
-                  0x000468                  ___subsf3
-                  0x00046a                  ___addsf3
-                  0x000524                  ___divsf3
-                  0x0005a8                  ___fixunssfsi
-                  0x0005de                  ___floatunsisf
-                  0x0005e2                  __fpack
-                  0x00062e                  __funpack
-                  0x000658                  __funpack2
-                  0x000668                  __fPropagateNaN
-                  0x00067a                  __fbopExit
-                  0x000682                  __fbopReturnNaN
-                  0x000688                  ___floatundisf
-                  0x0006e6                  _free
-                  0x0007b0                  _malloc
-                  0x000804                  _strlen
-                  0x000810                  __Getmem
-                  0x000824                  vsprintf.XX_eo:_prout
-                  0x000832                  _vsprintf
-                  0x00084c                  __Printf
-                  0x0009b0                  __Putfld
-                  0x000c8a                  _strchr
-                  0x000ca8                  __Vacopy
-                  0x000cac                  _memchr
-                  0x000cc0                  _memcpy
-                  0x000cce                  __Ldtob
-                  0x0010c0                  __LDunscale
-                  0x001114                  __Litob
-                  0x001372                  __Puttxt
-                  0x0014ea                  _ldiv
-                  0x001514                  __Dnorm
-                  0x0015ac                  __LDscale
-                  0x0016a0                  __Genld
-                  0x001904                  _div
-                  0x00191a                  ___eqdf2
-                  0x00191a                  ___ledf2
-                  0x00191a                  ___ltdf2
-                  0x001924                  ___gedf2
-                  0x001924                  ___gtdf2
-                  0x00192e                  ___divdf3
-                  0x0019e2                  ___divsi3
-                  0x001a00                  __dpack
-                  0x001a58                  __dunpack2
-                  0x001a7a                  __dreturnNaN
-                  0x001a80                  __dunpack2exit
-                  0x001a8a                  ___extendsfdf2
-                  0x001ac8                  ___fixdfsi
-                  0x001b20                  ___floatsidf
-                  0x001b28                  ___muldf3
-                  0x001c14                  ___subdf3
-                  0x001c18                  ___udivsi3
-                  0x001c38                  ___umodsi3
-                  0x001c3e                  ___mulsi3
-                  0x001c3e                  ___mulp32peds3
-                  0x001c3e                  ___mulp32eds3
-                  0x001c96                  ___udivmoddi3
-                  0x001d7c                  ___udivdi3
-                  0x001d8a                  ___umoddi3
-                  0x001d92                  ___divdi3
-                  0x001df2                  ___moddi3
-                  0x001e50                  ___adddf3
-                  0x001f4c                  __dcompare
-                  0x001f9e                  __dPropagateNaN
-                  0x001fba                  __dtype
-                  0x001fde                  __dunpack
-                  0x00202c                  ___floatdidf
-                  0x00204c                  ___floatundidf
-                  0x0021fe                  _Uart1_SetTxBuffer
-                  0x002210                  _Uart1_SetRxBuffer
-                  0x002222                  _Uart2_SetTxBuffer
-                  0x002234                  _Uart2_SetRxBuffer
-                  0x002246                  _Uart1_Init
-                  0x002322                  _Uart2_Init
-                  0x0023fe                  _Uart_Init
-                  0x002430                  _Uart1_Put
-                  0x002448                  _Uart2_Put
-                  0x002460                  _Uart1_Get
-                  0x002486                  _Uart2_Get
-                  0x0024ac                  _Uart1_Write
-                  0x0024e0                  _Uart2_Write
-                  0x002514                  _Uart1_WriteBytes
-                  0x002550                  _Uart2_WriteBytes
-                  0x00258c                  _Uart1_PutAsync
-                  0x0025da                  _Uart2_PutAsync
-                  0x002628                  _Uart1_WriteAsync
-                  0x0026d6                  _Uart2_WriteAsync
-                  0x002782                  _Uart1_GetTxBufferSpace
-                  0x002792                  _Uart2_GetTxBufferSpace
-                  0x0027a2                  _Uart1_ClearTxBuffer
-                  0x0027dc                  _Uart2_ClearTxBuffer
-                  0x002816                  _Uart1_ClearRxBuffer
-                  0x002850                  _Uart2_ClearRxBuffer
-                  0x00288a                  _Uart1_Printf
-                  0x0028d0                  _Uart1_PrintfAsync
-                  0x002916                  _Uart2_Printf
-                  0x00295c                  _Uart2_PrintfAsync
-                  0x0029a2                  _Uart_Printf
-                  0x0029fc                  _Uart_PrintfAsync
-                  0x002a56                  _Uart1_SetRxIsrCallback
-                  0x002a62                  _Uart2_SetRxIsrCallback
-                  0x002a6e                  _Uart1_SetRxCallback
-                  0x002a7a                  _Uart2_SetRxCallback
-                  0x002a86                  _Uart1_SetTxCallback
-                  0x002a92                  _Uart2_SetTxCallback
-                  0x002ada                  _Uart1_SetRxLineCallback
-                  0x002aec                  _Uart2_SetRxLineCallback
-                  0x002afe                  _Uart1_SetBufferFullCallback
-                  0x002b0a                  _Uart2_SetBufferFullCallback
-                  0x002c6a                  _Uart1_ClearLineBuffer
-                  0x002caa                  _Uart2_ClearLineBuffer
-                  0x002cea                  _Uart1_Executor
-                  0x002dd2                  _Uart2_Executor
-                  0x002ec4                  _Queue_Init
-                  0x002f0e                  _Queue_Put
-                  0x002f6a                  _Queue_Get
-                  0x002fca                  _Queue_Space
-                  0x002fdc                  _Queue_Reset
-                  0x0030c8                  _Mcu_IoInit
-                  0x0030ea                  _Mcu_ClockInit
-                  0x003106                  _Mcu_UnlockRemap
-                  0x003118                  _Mcu_LockRemap
-                  0x00312a                  _Mcu_Init
-                  0x003134                  _main
+                  0x000252                  __data_init
+                  0x0002cc                  __T1Interrupt
+                  0x0002f4                  __ADC1Interrupt
+                  0x000308                  __U1RXInterrupt
+                  0x00039e                  __U2RXInterrupt
+                  0x000434                  __U1TXInterrupt
+                  0x000448                  __U2TXInterrupt
+                  0x00045c                  __DefaultInterrupt
+                  0x0004a4                  ___subsf3
+                  0x0004a6                  ___addsf3
+                  0x000560                  ___divsf3
+                  0x0005e4                  ___ltsf2
+                  0x0005e4                  ___eqsf2
+                  0x0005e4                  ___lesf2
+                  0x0005e8                  ___gtsf2
+                  0x0005e8                  ___gesf2
+                  0x0005ec                  ___fixunssfsi
+                  0x000622                  ___floatsisf
+                  0x000628                  ___floatunsisf
+                  0x00062c                  ___nesf2
+                  0x000630                  __fpack
+                  0x00067c                  __funpack
+                  0x0006a6                  __funpack2
+                  0x0006b6                  __fPropagateNaN
+                  0x0006c8                  __fbopExit
+                  0x0006d0                  __fbopReturnNaN
+                  0x0006d6                  ___mulsf3
+                  0x00073e                  __fcompare
+                  0x000774                  ___floatdisf
+                  0x000794                  ___floatundisf
+                  0x0007f2                  _free
+                  0x0008bc                  _malloc
+                  0x000910                  _strlen
+                  0x00091c                  __Getmem
+                  0x000930                  vsprintf.XX_eo:_prout
+                  0x00093e                  _vsprintf
+                  0x000958                  __Printf
+                  0x000abc                  __Putfld
+                  0x000d96                  _strchr
+                  0x000db4                  __Vacopy
+                  0x000db8                  _memchr
+                  0x000dcc                  _memcpy
+                  0x000dda                  __Ldtob
+                  0x0011cc                  __LDunscale
+                  0x001220                  __Litob
+                  0x00147e                  __Puttxt
+                  0x0015f6                  _ldiv
+                  0x001620                  __Dnorm
+                  0x0016b8                  __LDscale
+                  0x0017ac                  __Genld
+                  0x001a10                  _div
+                  0x001a26                  ___eqdf2
+                  0x001a26                  ___ltdf2
+                  0x001a26                  ___ledf2
+                  0x001a30                  ___gtdf2
+                  0x001a30                  ___gedf2
+                  0x001a3a                  ___divdf3
+                  0x001aee                  ___divsi3
+                  0x001b0c                  __dpack
+                  0x001b64                  __dunpack2
+                  0x001b86                  __dreturnNaN
+                  0x001b8c                  __dunpack2exit
+                  0x001b96                  ___extendsfdf2
+                  0x001bd4                  ___fixdfsi
+                  0x001c2c                  ___floatsidf
+                  0x001c34                  ___muldf3
+                  0x001d20                  ___subdf3
+                  0x001d24                  ___udivsi3
+                  0x001d44                  ___umodsi3
+                  0x001d4a                  ___mulp32eds3
+                  0x001d4a                  ___mulp32peds3
+                  0x001d4a                  ___mulsi3
+                  0x001da2                  ___udivmoddi3
+                  0x001e88                  ___udivdi3
+                  0x001e96                  ___umoddi3
+                  0x001e9e                  ___divdi3
+                  0x001efe                  ___moddi3
+                  0x001f5c                  ___adddf3
+                  0x002058                  __dcompare
+                  0x0020aa                  __dPropagateNaN
+                  0x0020c6                  __dtype
+                  0x0020ea                  __dunpack
+                  0x002138                  ___floatdidf
+                  0x002158                  ___floatundidf
+                  0x002386                  _Uart1_SetTxBuffer
+                  0x002398                  _Uart1_SetRxBuffer
+                  0x0023aa                  _Uart2_SetTxBuffer
+                  0x0023bc                  _Uart2_SetRxBuffer
+                  0x0023ce                  _Uart1_Init
+                  0x0024aa                  _Uart2_Init
+                  0x002586                  _Uart_Init
+                  0x0025b8                  _Uart1_Put
+                  0x0025d0                  _Uart2_Put
+                  0x0025e8                  _Uart1_Get
+                  0x00260e                  _Uart2_Get
+                  0x002634                  _Uart1_Write
+                  0x002668                  _Uart2_Write
+                  0x00269c                  _Uart1_WriteBytes
+                  0x0026d8                  _Uart2_WriteBytes
+                  0x002714                  _Uart1_PutAsync
+                  0x002762                  _Uart2_PutAsync
+                  0x0027b0                  _Uart1_WriteAsync
+                  0x00285e                  _Uart2_WriteAsync
+                  0x00290a                  _Uart1_GetTxBufferSpace
+                  0x00291a                  _Uart2_GetTxBufferSpace
+                  0x00292a                  _Uart1_ClearTxBuffer
+                  0x002964                  _Uart2_ClearTxBuffer
+                  0x00299e                  _Uart1_ClearRxBuffer
+                  0x0029d8                  _Uart2_ClearRxBuffer
+                  0x002a12                  _Uart1_Printf
+                  0x002a58                  _Uart1_PrintfAsync
+                  0x002a9e                  _Uart2_Printf
+                  0x002ae4                  _Uart2_PrintfAsync
+                  0x002b2a                  _Uart_Printf
+                  0x002b84                  _Uart_PrintfAsync
+                  0x002bde                  _Uart1_SetRxIsrCallback
+                  0x002bea                  _Uart2_SetRxIsrCallback
+                  0x002bf6                  _Uart1_SetRxCallback
+                  0x002c02                  _Uart2_SetRxCallback
+                  0x002c0e                  _Uart1_SetTxCallback
+                  0x002c1a                  _Uart2_SetTxCallback
+                  0x002c62                  _Uart1_SetRxLineCallback
+                  0x002c74                  _Uart2_SetRxLineCallback
+                  0x002c86                  _Uart1_SetBufferFullCallback
+                  0x002c92                  _Uart2_SetBufferFullCallback
+                  0x002df2                  _Uart1_ClearLineBuffer
+                  0x002e32                  _Uart2_ClearLineBuffer
+                  0x002e72                  _Uart1_Executor
+                  0x002f5a                  _Uart2_Executor
+                  0x003206                  _Psw_SetKeyDownCallback
+                  0x003274                  _Psw_SetKeyHoldCallback
+                  0x0032e2                  _Psw_SetKeyLockCallback
+                  0x003350                  _Psw_SetKeyUpCallback
+                  0x0033be                  _Psw_SetKeyChangedCallback
+                  0x00342c                  _Psw_GetKeyState
+                  0x003442                  _PSW_KeyTickedExecutor
+                  0x003502                  _Beep_Init
+                  0x00356a                  _Beep_SetFrequency
+                  0x003696                  _Beep_SetPower
+                  0x0036c8                  _Beep
+                  0x0036f8                  _Beep_Play
+                  0x00370e                  _Beep_Generate
+                  0x00372e                  _Beep_SetCallback
+                  0x00373a                  _BEEP_TickedExecutor
+                  0x0037c4                  _Led_Set
+                  0x0037f6                  _Led_Clr
+                  0x003828                  _Led_Wrt
+                  0x003884                  _Led_Inv
+                  0x003958                  _Led_Get
+                  0x0039bc                  _Led_Write
+                  0x003a34                  _Led_Read
+                  0x003a70                  _Led_BlinkInit
+                  0x003abe                  _Led_Flash
+                  0x003b0e                  _Led_Blink
+                  0x003b60                  _Led_Pwm
+                  0x003bc8                  _Led_SetChangedCallback
+                  0x003be0                  _Led_SetMode
+                  0x003bf8                  _LED_BlinkTickedExecutor
+                  0x003d10                  _Adc_Init
+                  0x003dda                  _Adc_Get
+                  0x003e1c                  _Adc_GetVoltage
+                  0x003e4c                  _Adc_GetPercentage
+                  0x003e74                  _Adc_SetChangedCallback
+                  0x003e8c                  _Adc_SetChangedThreshold
+                  0x003ea4                  _Adc_SetChangedInterval
+                  0x003ebc                  _ADC_TickedExecutor
+                  0x003f9a                  _Queue_Init
+                  0x003fe4                  _Queue_Put
+                  0x004040                  _Queue_Get
+                  0x0040a0                  _Queue_Space
+                  0x0040b2                  _Queue_Reset
+                  0x0040ec                  _Sys_IsrPerformTick
+                  0x004168                  _Sys_Start
+                  0x004170                  _Sys_Stop
+                  0x004178                  _Sys_SetTickCallback
+                  0x004184                  _Sys_GetTicks
+                  0x00418e                  _Sys_GetTimeMilli
+                  0x0041b2                  _Sys_GetTimeMicro
+                  0x0041da                  _Sys_GetClock
+                  0x0041ea                  _Sys_SetClock
+                  0x004210                  _Sys_TickInit
+                  0x004310                  _Psw_Get
+                  0x00437a                  _Psw_Read
+                  0x00438a                  _Mcu_IoInit
+                  0x0043ac                  _Mcu_ClockInit
+                  0x0043c8                  _Mcu_UnlockRemap
+                  0x0043da                  _Mcu_LockRemap
+                  0x0043ec                  _Mcu_Init
+                  0x0043f6                  _BSP_TickIsrExecutor
+                  0x004402                  _BSP_Executor
+                  0x004424                  _main
 
 External Symbols in Program Memory (by name):
 
-                  0x0030ea                  _Mcu_ClockInit
-                  0x00312a                  _Mcu_Init
-                  0x0030c8                  _Mcu_IoInit
-                  0x003118                  _Mcu_LockRemap
-                  0x003106                  _Mcu_UnlockRemap
-                  0x002f6a                  _Queue_Get
-                  0x002ec4                  _Queue_Init
-                  0x002f0e                  _Queue_Put
-                  0x002fdc                  _Queue_Reset
-                  0x002fca                  _Queue_Space
-                  0x002c6a                  _Uart1_ClearLineBuffer
-                  0x002816                  _Uart1_ClearRxBuffer
-                  0x0027a2                  _Uart1_ClearTxBuffer
-                  0x002cea                  _Uart1_Executor
-                  0x002460                  _Uart1_Get
-                  0x002782                  _Uart1_GetTxBufferSpace
-                  0x002246                  _Uart1_Init
-                  0x00288a                  _Uart1_Printf
-                  0x0028d0                  _Uart1_PrintfAsync
-                  0x002430                  _Uart1_Put
-                  0x00258c                  _Uart1_PutAsync
-                  0x002afe                  _Uart1_SetBufferFullCallback
-                  0x002210                  _Uart1_SetRxBuffer
-                  0x002a6e                  _Uart1_SetRxCallback
-                  0x002a56                  _Uart1_SetRxIsrCallback
-                  0x002ada                  _Uart1_SetRxLineCallback
-                  0x0021fe                  _Uart1_SetTxBuffer
-                  0x002a86                  _Uart1_SetTxCallback
-                  0x0024ac                  _Uart1_Write
-                  0x002628                  _Uart1_WriteAsync
-                  0x002514                  _Uart1_WriteBytes
-                  0x002caa                  _Uart2_ClearLineBuffer
-                  0x002850                  _Uart2_ClearRxBuffer
-                  0x0027dc                  _Uart2_ClearTxBuffer
-                  0x002dd2                  _Uart2_Executor
-                  0x002486                  _Uart2_Get
-                  0x002792                  _Uart2_GetTxBufferSpace
-                  0x002322                  _Uart2_Init
-                  0x002916                  _Uart2_Printf
-                  0x00295c                  _Uart2_PrintfAsync
-                  0x002448                  _Uart2_Put
-                  0x0025da                  _Uart2_PutAsync
-                  0x002b0a                  _Uart2_SetBufferFullCallback
-                  0x002234                  _Uart2_SetRxBuffer
-                  0x002a7a                  _Uart2_SetRxCallback
-                  0x002a62                  _Uart2_SetRxIsrCallback
-                  0x002aec                  _Uart2_SetRxLineCallback
-                  0x002222                  _Uart2_SetTxBuffer
-                  0x002a92                  _Uart2_SetTxCallback
-                  0x0024e0                  _Uart2_Write
-                  0x0026d6                  _Uart2_WriteAsync
-                  0x002550                  _Uart2_WriteBytes
-                  0x0023fe                  _Uart_Init
-                  0x0029a2                  _Uart_Printf
-                  0x0029fc                  _Uart_PrintfAsync
-                  0x000420                  __DefaultInterrupt
-                  0x001514                  __Dnorm
-                  0x0016a0                  __Genld
-                  0x000810                  __Getmem
-                  0x0015ac                  __LDscale
-                  0x0010c0                  __LDunscale
-                  0x000cce                  __Ldtob
-                  0x001114                  __Litob
-                  0x00084c                  __Printf
-                  0x0009b0                  __Putfld
-                  0x001372                  __Puttxt
-                  0x0002cc                  __U1RXInterrupt
-                  0x0003f8                  __U1TXInterrupt
-                  0x000362                  __U2RXInterrupt
-                  0x00040c                  __U2TXInterrupt
-                  0x000ca8                  __Vacopy
-                  0x001e50                  ___adddf3
-                  0x00046a                  ___addsf3
-                  0x00192e                  ___divdf3
-                  0x001d92                  ___divdi3
-                  0x000524                  ___divsf3
-                  0x0019e2                  ___divsi3
-                  0x00191a                  ___eqdf2
-                  0x001a8a                  ___extendsfdf2
-                  0x001ac8                  ___fixdfsi
-                  0x0005a8                  ___fixunssfsi
-                  0x00202c                  ___floatdidf
-                  0x001b20                  ___floatsidf
-                  0x00204c                  ___floatundidf
-                  0x000688                  ___floatundisf
-                  0x0005de                  ___floatunsisf
-                  0x001924                  ___gedf2
-                  0x001924                  ___gtdf2
-                  0x00191a                  ___ledf2
-                  0x00191a                  ___ltdf2
-                  0x001df2                  ___moddi3
-                  0x001b28                  ___muldf3
-                  0x001c3e                  ___mulp32eds3
-                  0x001c3e                  ___mulp32peds3
-                  0x001c3e                  ___mulsi3
-                  0x001c14                  ___subdf3
-                  0x000468                  ___subsf3
-                  0x001d7c                  ___udivdi3
-                  0x001c96                  ___udivmoddi3
-                  0x001c18                  ___udivsi3
-                  0x001d8a                  ___umoddi3
-                  0x001c38                  ___umodsi3
-                  0x001f9e                  __dPropagateNaN
+                  0x003ebc                  _ADC_TickedExecutor
+                  0x003dda                  _Adc_Get
+                  0x003e4c                  _Adc_GetPercentage
+                  0x003e1c                  _Adc_GetVoltage
+                  0x003d10                  _Adc_Init
+                  0x003e74                  _Adc_SetChangedCallback
+                  0x003ea4                  _Adc_SetChangedInterval
+                  0x003e8c                  _Adc_SetChangedThreshold
+                  0x00373a                  _BEEP_TickedExecutor
+                  0x004402                  _BSP_Executor
+                  0x0043f6                  _BSP_TickIsrExecutor
+                  0x0036c8                  _Beep
+                  0x00370e                  _Beep_Generate
+                  0x003502                  _Beep_Init
+                  0x0036f8                  _Beep_Play
+                  0x00372e                  _Beep_SetCallback
+                  0x00356a                  _Beep_SetFrequency
+                  0x003696                  _Beep_SetPower
+                  0x003bf8                  _LED_BlinkTickedExecutor
+                  0x003b0e                  _Led_Blink
+                  0x003a70                  _Led_BlinkInit
+                  0x0037f6                  _Led_Clr
+                  0x003abe                  _Led_Flash
+                  0x003958                  _Led_Get
+                  0x003884                  _Led_Inv
+                  0x003b60                  _Led_Pwm
+                  0x003a34                  _Led_Read
+                  0x0037c4                  _Led_Set
+                  0x003bc8                  _Led_SetChangedCallback
+                  0x003be0                  _Led_SetMode
+                  0x0039bc                  _Led_Write
+                  0x003828                  _Led_Wrt
+                  0x0043ac                  _Mcu_ClockInit
+                  0x0043ec                  _Mcu_Init
+                  0x00438a                  _Mcu_IoInit
+                  0x0043da                  _Mcu_LockRemap
+                  0x0043c8                  _Mcu_UnlockRemap
+                  0x003442                  _PSW_KeyTickedExecutor
+                  0x004310                  _Psw_Get
+                  0x00342c                  _Psw_GetKeyState
+                  0x00437a                  _Psw_Read
+                  0x0033be                  _Psw_SetKeyChangedCallback
+                  0x003206                  _Psw_SetKeyDownCallback
+                  0x003274                  _Psw_SetKeyHoldCallback
+                  0x0032e2                  _Psw_SetKeyLockCallback
+                  0x003350                  _Psw_SetKeyUpCallback
+                  0x004040                  _Queue_Get
+                  0x003f9a                  _Queue_Init
+                  0x003fe4                  _Queue_Put
+                  0x0040b2                  _Queue_Reset
+                  0x0040a0                  _Queue_Space
+                  0x0041da                  _Sys_GetClock
+                  0x004184                  _Sys_GetTicks
+                  0x0041b2                  _Sys_GetTimeMicro
+                  0x00418e                  _Sys_GetTimeMilli
+                  0x0040ec                  _Sys_IsrPerformTick
+                  0x0041ea                  _Sys_SetClock
+                  0x004178                  _Sys_SetTickCallback
+                  0x004168                  _Sys_Start
+                  0x004170                  _Sys_Stop
+                  0x004210                  _Sys_TickInit
+                  0x002df2                  _Uart1_ClearLineBuffer
+                  0x00299e                  _Uart1_ClearRxBuffer
+                  0x00292a                  _Uart1_ClearTxBuffer
+                  0x002e72                  _Uart1_Executor
+                  0x0025e8                  _Uart1_Get
+                  0x00290a                  _Uart1_GetTxBufferSpace
+                  0x0023ce                  _Uart1_Init
+                  0x002a12                  _Uart1_Printf
+                  0x002a58                  _Uart1_PrintfAsync
+                  0x0025b8                  _Uart1_Put
+                  0x002714                  _Uart1_PutAsync
+                  0x002c86                  _Uart1_SetBufferFullCallback
+                  0x002398                  _Uart1_SetRxBuffer
+                  0x002bf6                  _Uart1_SetRxCallback
+                  0x002bde                  _Uart1_SetRxIsrCallback
+                  0x002c62                  _Uart1_SetRxLineCallback
+                  0x002386                  _Uart1_SetTxBuffer
+                  0x002c0e                  _Uart1_SetTxCallback
+                  0x002634                  _Uart1_Write
+                  0x0027b0                  _Uart1_WriteAsync
+                  0x00269c                  _Uart1_WriteBytes
+                  0x002e32                  _Uart2_ClearLineBuffer
+                  0x0029d8                  _Uart2_ClearRxBuffer
+                  0x002964                  _Uart2_ClearTxBuffer
+                  0x002f5a                  _Uart2_Executor
+                  0x00260e                  _Uart2_Get
+                  0x00291a                  _Uart2_GetTxBufferSpace
+                  0x0024aa                  _Uart2_Init
+                  0x002a9e                  _Uart2_Printf
+                  0x002ae4                  _Uart2_PrintfAsync
+                  0x0025d0                  _Uart2_Put
+                  0x002762                  _Uart2_PutAsync
+                  0x002c92                  _Uart2_SetBufferFullCallback
+                  0x0023bc                  _Uart2_SetRxBuffer
+                  0x002c02                  _Uart2_SetRxCallback
+                  0x002bea                  _Uart2_SetRxIsrCallback
+                  0x002c74                  _Uart2_SetRxLineCallback
+                  0x0023aa                  _Uart2_SetTxBuffer
+                  0x002c1a                  _Uart2_SetTxCallback
+                  0x002668                  _Uart2_Write
+                  0x00285e                  _Uart2_WriteAsync
+                  0x0026d8                  _Uart2_WriteBytes
+                  0x002586                  _Uart_Init
+                  0x002b2a                  _Uart_Printf
+                  0x002b84                  _Uart_PrintfAsync
+                  0x0002f4                  __ADC1Interrupt
+                  0x00045c                  __DefaultInterrupt
+                  0x001620                  __Dnorm
+                  0x0017ac                  __Genld
+                  0x00091c                  __Getmem
+                  0x0016b8                  __LDscale
+                  0x0011cc                  __LDunscale
+                  0x000dda                  __Ldtob
+                  0x001220                  __Litob
+                  0x000958                  __Printf
+                  0x000abc                  __Putfld
+                  0x00147e                  __Puttxt
+                  0x0002cc                  __T1Interrupt
+                  0x000308                  __U1RXInterrupt
+                  0x000434                  __U1TXInterrupt
+                  0x00039e                  __U2RXInterrupt
+                  0x000448                  __U2TXInterrupt
+                  0x000db4                  __Vacopy
+                  0x001f5c                  ___adddf3
+                  0x0004a6                  ___addsf3
+                  0x001a3a                  ___divdf3
+                  0x001e9e                  ___divdi3
+                  0x000560                  ___divsf3
+                  0x001aee                  ___divsi3
+                  0x001a26                  ___eqdf2
+                  0x0005e4                  ___eqsf2
+                  0x001b96                  ___extendsfdf2
+                  0x001bd4                  ___fixdfsi
+                  0x0005ec                  ___fixunssfsi
+                  0x002138                  ___floatdidf
+                  0x000774                  ___floatdisf
+                  0x001c2c                  ___floatsidf
+                  0x000622                  ___floatsisf
+                  0x002158                  ___floatundidf
+                  0x000794                  ___floatundisf
+                  0x000628                  ___floatunsisf
+                  0x001a30                  ___gedf2
+                  0x0005e8                  ___gesf2
+                  0x001a30                  ___gtdf2
+                  0x0005e8                  ___gtsf2
+                  0x001a26                  ___ledf2
+                  0x0005e4                  ___lesf2
+                  0x001a26                  ___ltdf2
+                  0x0005e4                  ___ltsf2
+                  0x001efe                  ___moddi3
+                  0x001c34                  ___muldf3
+                  0x001d4a                  ___mulp32eds3
+                  0x001d4a                  ___mulp32peds3
+                  0x0006d6                  ___mulsf3
+                  0x001d4a                  ___mulsi3
+                  0x00062c                  ___nesf2
+                  0x001d20                  ___subdf3
+                  0x0004a4                  ___subsf3
+                  0x001e88                  ___udivdi3
+                  0x001da2                  ___udivmoddi3
+                  0x001d24                  ___udivsi3
+                  0x001e96                  ___umoddi3
+                  0x001d44                  ___umodsi3
+                  0x0020aa                  __dPropagateNaN
                   0x000252                  __data_init
                   0x000252                  __data_init_standard
-                  0x001f4c                  __dcompare
-                  0x001a00                  __dpack
-                  0x001a7a                  __dreturnNaN
-                  0x001fba                  __dtype
-                  0x001fde                  __dunpack
-                  0x001a58                  __dunpack2
-                  0x001a80                  __dunpack2exit
-                  0x000668                  __fPropagateNaN
-                  0x00067a                  __fbopExit
-                  0x000682                  __fbopReturnNaN
-                  0x0005e2                  __fpack
-                  0x00062e                  __funpack
-                  0x000658                  __funpack2
+                  0x002058                  __dcompare
+                  0x001b0c                  __dpack
+                  0x001b86                  __dreturnNaN
+                  0x0020c6                  __dtype
+                  0x0020ea                  __dunpack
+                  0x001b64                  __dunpack2
+                  0x001b8c                  __dunpack2exit
+                  0x0006b6                  __fPropagateNaN
+                  0x0006c8                  __fbopExit
+                  0x0006d0                  __fbopReturnNaN
+                  0x00073e                  __fcompare
+                  0x000630                  __fpack
+                  0x00067c                  __funpack
+                  0x0006a6                  __funpack2
                   0x00023c                  __psv_init
                   0x000200                  __resetPRI
-                  0x001904                  _div
-                  0x0006e6                  _free
-                  0x0014ea                  _ldiv
-                  0x003134                  _main
-                  0x0007b0                  _malloc
-                  0x000cac                  _memchr
-                  0x000cc0                  _memcpy
-                  0x000c8a                  _strchr
-                  0x000804                  _strlen
-                  0x000832                  _vsprintf
-                  0x000824                  vsprintf.XX_eo:_prout
+                  0x001a10                  _div
+                  0x0007f2                  _free
+                  0x0015f6                  _ldiv
+                  0x004424                  _main
+                  0x0008bc                  _malloc
+                  0x000db8                  _memchr
+                  0x000dcc                  _memcpy
+                  0x000d96                  _strchr
+                  0x000910                  _strlen
+                  0x00093e                  _vsprintf
+                  0x000930                  vsprintf.XX_eo:_prout
 
 Memory Configuration
 
@@ -533,7 +690,7 @@ LOAD c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libfx-elf.a
                   0x000002          0x2 SHORT 0x0 ((ABSOLUTE (__reset) >> 0x10) & 0x7f)
                   0x000003          0x2 SHORT 0x0
 
-.text             0x000200       0x1ea2
+.text             0x000200       0x1fae
  *(.init)
  .init            0x000200         0x4c c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-pic30-elf.a(crt0_standard.o)
                   0x000200                  __resetPRI
@@ -545,178 +702,202 @@ LOAD c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libfx-elf.a
  *(.user_init)
  *(.handle)
  *(.isr*)
- .isr.text        0x0002cc        0x154 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Uart.o)
-                  0x0002cc                  __U1RXInterrupt
-                  0x000362                  __U2RXInterrupt
-                  0x0003f8                  __U1TXInterrupt
-                  0x00040c                  __U2TXInterrupt
- .isr             0x000420          0x4 default_isr
-                  0x000420                  __DefaultInterrupt
+ .isr.text        0x0002cc         0x28 ./output/objects/main.o
+                  0x0002cc                  __T1Interrupt
+ .isr.text        0x0002f4         0x14 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Adc.o)
+                  0x0002f4                  __ADC1Interrupt
+ .isr.text        0x000308        0x154 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Uart.o)
+                  0x000308                  __U1RXInterrupt
+                  0x00039e                  __U2RXInterrupt
+                  0x000434                  __U1TXInterrupt
+                  0x000448                  __U2TXInterrupt
+ .isr             0x00045c          0x4 default_isr
+                  0x00045c                  __DefaultInterrupt
  *(.libc)
- .libc            0x000424         0x28 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-pic30-elf.a(sbrk.Leo)
-                  0x000424                  _sbrk
- .libc            0x00044c         0x1a c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-pic30-elf.a(brk.Lelo)
-                  0x00044c                  _brk
+ .libc            0x000460         0x28 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-pic30-elf.a(sbrk.Leo)
+                  0x000460                  _sbrk
+ .libc            0x000488         0x1a c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-pic30-elf.a(brk.Lelo)
+                  0x000488                  _brk
  *(.libm)
  *(.libdsp)
  *(.lib*)
  .libpic30_crt_start_mode
-                  0x000466          0x2 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-pic30-elf.a(crt_start_mode_normal.Leo)
-                  0x000466                  __crt_start_mode
-                  0x000466                  __crt_start_mode_normal
- .libm.subsf3     0x000468         0xbc c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(addsf3.eo)
-                  0x000468                  ___subsf3
-                  0x00046a                  ___addsf3
- .libm.divfs3     0x000524         0x84 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(divsf3.eo)
-                  0x000524                  ___divsf3
+                  0x0004a2          0x2 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-pic30-elf.a(crt_start_mode_normal.Leo)
+                  0x0004a2                  __crt_start_mode
+                  0x0004a2                  __crt_start_mode_normal
+ .libm.subsf3     0x0004a4         0xbc c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(addsf3.eo)
+                  0x0004a4                  ___subsf3
+                  0x0004a6                  ___addsf3
+ .libm.divfs3     0x000560         0x84 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(divsf3.eo)
+                  0x000560                  ___divsf3
+ .libm.eqsf2      0x0005e4          0x4 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(feqltle.eo)
+                  0x0005e4                  ___eqsf2
+                  0x0005e4                  ___ltsf2
+                  0x0005e4                  ___lesf2
+ .libm.gtsf2      0x0005e8          0x4 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(fgtge.eo)
+                  0x0005e8                  ___gesf2
+                  0x0005e8                  ___gtsf2
  .libm.fixunssfsi
-                  0x0005a8         0x36 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(fixunssfsi.eo)
-                  0x0005a8                  ___fixunssfsi
+                  0x0005ec         0x36 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(fixunssfsi.eo)
+                  0x0005ec                  ___fixunssfsi
+ .libm.floatsisf
+                  0x000622          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(floatsisf.eo)
+                  0x000622                  ___floatsisf
  .libm.floatunsisf
-                  0x0005de          0x4 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(floatunsisf.eo)
-                  0x0005de                  ___floatunsisf
- .libm.fpack      0x0005e2         0x4c c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(fpack.eo)
-                  0x0005e2                  __fpack
- .libm.funpack    0x00062e         0x2a c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(funpack.eo)
-                  0x00062e                  __funpack
+                  0x000628          0x4 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(floatunsisf.eo)
+                  0x000628                  ___floatunsisf
+ .libm.nesf2      0x00062c          0x4 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(fne.eo)
+                  0x00062c                  ___nesf2
+ .libm.fpack      0x000630         0x4c c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(fpack.eo)
+                  0x000630                  __fpack
+ .libm.funpack    0x00067c         0x2a c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(funpack.eo)
+                  0x00067c                  __funpack
  .libm.funpack2
-                  0x000658         0x10 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(funpack2.eo)
-                  0x000658                  __funpack2
+                  0x0006a6         0x10 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(funpack2.eo)
+                  0x0006a6                  __funpack2
  .libm.fPropagateNaN
-                  0x000668         0x12 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(futil.eo)
-                  0x000668                  __fPropagateNaN
+                  0x0006b6         0x12 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(futil.eo)
+                  0x0006b6                  __fPropagateNaN
  .libm.fbobExit
-                  0x00067a          0x8 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(futil.eo)
-                  0x00067a                  __fbopExit
+                  0x0006c8          0x8 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(futil.eo)
+                  0x0006c8                  __fbopExit
  .libm.fbopReturnNaN
-                  0x000682          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(futil.eo)
-                  0x000682                  __fbopReturnNaN
+                  0x0006d0          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(futil.eo)
+                  0x0006d0                  __fbopReturnNaN
+ .libm.mulsf3     0x0006d6         0x68 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(mulsf3.eo)
+                  0x0006d6                  ___mulsf3
+ .libm.fcompare
+                  0x00073e         0x36 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(fcompare.eo)
+                  0x00073e                  __fcompare
+ .libm.floatdisf
+                  0x000774         0x20 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(floatdisf.eo)
+                  0x000774                  ___floatdisf
  .libm.floatundisf
-                  0x000688         0x5e c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(floatundisf.eo)
-                  0x000688                  ___floatundisf
- .libc.free       0x0006e6         0x64 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(free.XX_eo)
-                  0x0006e6                  _free
- .libc.findmem    0x00074a         0x66 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(malloc.XX_eo)
- .libc.malloc     0x0007b0         0x54 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(malloc.XX_eo)
-                  0x0007b0                  _malloc
- .libc.strlen     0x000804          0xc c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(strlen.XX_eo)
-                  0x000804                  _strlen
- .libc._Getmem    0x000810         0x14 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xgetmem.XX_eo)
-                  0x000810                  __Getmem
- .libc.prout      0x000824          0xe c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(vsprintf.XX_eo)
-                  0x000824                  vsprintf.XX_eo:_prout
+                  0x000794         0x5e c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(floatundisf.eo)
+                  0x000794                  ___floatundisf
+ .libc.free       0x0007f2         0x64 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(free.XX_eo)
+                  0x0007f2                  _free
+ .libc.findmem    0x000856         0x66 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(malloc.XX_eo)
+ .libc.malloc     0x0008bc         0x54 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(malloc.XX_eo)
+                  0x0008bc                  _malloc
+ .libc.strlen     0x000910          0xc c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(strlen.XX_eo)
+                  0x000910                  _strlen
+ .libc._Getmem    0x00091c         0x14 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xgetmem.XX_eo)
+                  0x00091c                  __Getmem
+ .libc.prout      0x000930          0xe c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(vsprintf.XX_eo)
+                  0x000930                  vsprintf.XX_eo:_prout
  .libc.vsprintf
-                  0x000832         0x1a c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(vsprintf.XX_eo)
-                  0x000832                  _vsprintf
- .libc._Printf    0x00084c        0x164 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xprintf.XX_eo)
-                  0x00084c                  __Printf
- .libc._Putfld    0x0009b0        0x2da c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xputfld.XX_eo)
-                  0x0009b0                  __Putfld
- .libc.strchr     0x000c8a         0x1e c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(strchr.XX_elo)
-                  0x000c8a                  _strchr
- .libc._Vacopy    0x000ca8          0x4 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xvacopy.XX_elo)
-                  0x000ca8                  __Vacopy
- .libc.memchr     0x000cac         0x14 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(memchr.XX_eo)
-                  0x000cac                  _memchr
- .libc.memcpy     0x000cc0          0xe c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(memcpy.XX_eo)
-                  0x000cc0                  _memcpy
- .libc._Ldtob     0x000cce        0x3f2 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xldtob.XX_eo)
-                  0x000cce                  __Ldtob
+                  0x00093e         0x1a c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(vsprintf.XX_eo)
+                  0x00093e                  _vsprintf
+ .libc._Printf    0x000958        0x164 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xprintf.XX_eo)
+                  0x000958                  __Printf
+ .libc._Putfld    0x000abc        0x2da c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xputfld.XX_eo)
+                  0x000abc                  __Putfld
+ .libc.strchr     0x000d96         0x1e c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(strchr.XX_elo)
+                  0x000d96                  _strchr
+ .libc._Vacopy    0x000db4          0x4 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xvacopy.XX_elo)
+                  0x000db4                  __Vacopy
+ .libc.memchr     0x000db8         0x14 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(memchr.XX_eo)
+                  0x000db8                  _memchr
+ .libc.memcpy     0x000dcc          0xe c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(memcpy.XX_eo)
+                  0x000dcc                  _memcpy
+ .libc._Ldtob     0x000dda        0x3f2 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xldtob.XX_eo)
+                  0x000dda                  __Ldtob
  .libc._LDunscale
-                  0x0010c0         0x54 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xldunsca.XX_eo)
-                  0x0010c0                  __LDunscale
- .libc._Litob     0x001114        0x25e c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xlitob.XX_eo)
-                  0x001114                  __Litob
- .libc._Puttxt    0x001372        0x178 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xputtxt.XX_eo)
-                  0x001372                  __Puttxt
- .libc.ldiv       0x0014ea         0x2a c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(ldiv.XX_elo)
-                  0x0014ea                  _ldiv
- .libc._Dnorm     0x001514         0x98 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xdnorm.XX_elo)
-                  0x001514                  __Dnorm
+                  0x0011cc         0x54 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xldunsca.XX_eo)
+                  0x0011cc                  __LDunscale
+ .libc._Litob     0x001220        0x25e c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xlitob.XX_eo)
+                  0x001220                  __Litob
+ .libc._Puttxt    0x00147e        0x178 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xputtxt.XX_eo)
+                  0x00147e                  __Puttxt
+ .libc.ldiv       0x0015f6         0x2a c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(ldiv.XX_elo)
+                  0x0015f6                  _ldiv
+ .libc._Dnorm     0x001620         0x98 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xdnorm.XX_elo)
+                  0x001620                  __Dnorm
  .libc._LDscale
-                  0x0015ac         0xf4 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xldscale.XX_elo)
-                  0x0015ac                  __LDscale
- .libc._Genld     0x0016a0        0x264 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xgenld.XX_eo)
-                  0x0016a0                  __Genld
- .libc.div        0x001904         0x16 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(div.XX_elo)
-                  0x001904                  _div
- .libm.eqdf2      0x00191a          0xa c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(deqltle.eo)
-                  0x00191a                  ___eqdf2
-                  0x00191a                  ___ltdf2
-                  0x00191a                  ___ledf2
- .libm.gtdf2      0x001924          0xa c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(dgtge.eo)
-                  0x001924                  ___gtdf2
-                  0x001924                  ___gedf2
- .libm.divdf3     0x00192e         0xb4 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(divdf3.eo)
-                  0x00192e                  ___divdf3
- .libm.divsi3     0x0019e2         0x1e c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(divsi3.eo)
-                  0x0019e2                  ___divsi3
- .libm.dpack      0x001a00         0x58 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(dpack.eo)
-                  0x001a00                  __dpack
+                  0x0016b8         0xf4 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xldscale.XX_elo)
+                  0x0016b8                  __LDscale
+ .libc._Genld     0x0017ac        0x264 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xgenld.XX_eo)
+                  0x0017ac                  __Genld
+ .libc.div        0x001a10         0x16 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(div.XX_elo)
+                  0x001a10                  _div
+ .libm.eqdf2      0x001a26          0xa c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(deqltle.eo)
+                  0x001a26                  ___eqdf2
+                  0x001a26                  ___ltdf2
+                  0x001a26                  ___ledf2
+ .libm.gtdf2      0x001a30          0xa c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(dgtge.eo)
+                  0x001a30                  ___gtdf2
+                  0x001a30                  ___gedf2
+ .libm.divdf3     0x001a3a         0xb4 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(divdf3.eo)
+                  0x001a3a                  ___divdf3
+ .libm.divsi3     0x001aee         0x1e c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(divsi3.eo)
+                  0x001aee                  ___divsi3
+ .libm.dpack      0x001b0c         0x58 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(dpack.eo)
+                  0x001b0c                  __dpack
  .libm.dunpack2
-                  0x001a58         0x32 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(dunpack2.eo)
-                  0x001a58                  __dunpack2
-                  0x001a7a                  __dreturnNaN
-                  0x001a80                  __dunpack2exit
+                  0x001b64         0x32 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(dunpack2.eo)
+                  0x001b64                  __dunpack2
+                  0x001b86                  __dreturnNaN
+                  0x001b8c                  __dunpack2exit
  .libm.extendsfdf2
-                  0x001a8a         0x3e c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(extendsfdf.eo)
-                  0x001a8a                  ___extendsfdf2
- .libm.fixdfsi    0x001ac8         0x58 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(fixdfsi.eo)
-                  0x001ac8                  _(float, int, long long, double, float, short, int)
+                  0x001b96         0x3e c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(extendsfdf.eo)
+                  0x001b96                  ___extendsfdf2
+ .libm.fixdfsi    0x001bd4         0x58 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(fixdfsi.eo)
+                  0x001bd4                  _(float, int, long long, double, float, short, int)
  .libm.floatsidf
-                  0x001b20          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(floatsidf.eo)
-                  0x001b20                  ___floatsidf
- *fill*           0x001b26          0x400
- .libm.muldf3     0x001b28         0xec c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(muldf3.eo)
-                  0x001b28                  ___muldf3
- .libm.subdf3     0x001c14          0x4 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(subdf3.eo)
-                  0x001c14                  ___subdf3
- .libm.udivsi3    0x001c18         0x20 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(udivsi3.eo)
-                  0x001c18                  ___udivsi3
- .libm.umodsi3    0x001c38          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(umodsi3.eo)
-                  0x001c38                  ___umodsi3
- .libm.mulsi3     0x001c3e          0xc c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(mulsi3.eo)
-                  0x001c3e                  ___mulp32peds3
-                  0x001c3e                  ___mulsi3
-                  0x001c3e                  ___mulp32eds3
+                  0x001c2c          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(floatsidf.eo)
+                  0x001c2c                  ___floatsidf
+ *fill*           0x001c32          0x400
+ .libm.muldf3     0x001c34         0xec c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(muldf3.eo)
+                  0x001c34                  ___muldf3
+ .libm.subdf3     0x001d20          0x4 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(subdf3.eo)
+                  0x001d20                  ___subdf3
+ .libm.udivsi3    0x001d24         0x20 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(udivsi3.eo)
+                  0x001d24                  ___udivsi3
+ .libm.umodsi3    0x001d44          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(umodsi3.eo)
+                  0x001d44                  ___umodsi3
+ .libm.mulsi3     0x001d4a          0xc c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(mulsi3.eo)
+                  0x001d4a                  ___mulp32peds3
+                  0x001d4a                  ___mulsi3
+                  0x001d4a                  ___mulp32eds3
  .libm.__PplusBdi
-                  0x001c4a         0x26 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(divmoddi3.eo)
+                  0x001d56         0x26 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(divmoddi3.eo)
  .libm.__PminusBdi
-                  0x001c70         0x26 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(divmoddi3.eo)
+                  0x001d7c         0x26 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(divmoddi3.eo)
  .libm.__udivmoddi3
-                  0x001c96         0xe6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(divmoddi3.eo)
-                  0x001c96                  ___udivmoddi3
+                  0x001da2         0xe6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(divmoddi3.eo)
+                  0x001da2                  ___udivmoddi3
  .libm.__udivdi3
-                  0x001d7c          0xe c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(divmoddi3.eo)
-                  0x001d7c                  ___udivdi3
+                  0x001e88          0xe c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(divmoddi3.eo)
+                  0x001e88                  ___udivdi3
  .libm.__umoddi3
-                  0x001d8a          0x8 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(divmoddi3.eo)
-                  0x001d8a                  ___umoddi3
+                  0x001e96          0x8 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(divmoddi3.eo)
+                  0x001e96                  ___umoddi3
  .libm.__divdi3
-                  0x001d92         0x60 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(divmoddi3.eo)
-                  0x001d92                  ___divdi3
+                  0x001e9e         0x60 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(divmoddi3.eo)
+                  0x001e9e                  ___divdi3
  .libm.__moddi3
-                  0x001df2         0x5c c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(divmoddi3.eo)
-                  0x001df2                  ___moddi3
- *fill*           0x001e4e          0x400
- .libm.adddf3     0x001e50         0xfc c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(adddf3.eo)
-                  0x001e50                  ___adddf3
+                  0x001efe         0x5c c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(divmoddi3.eo)
+                  0x001efe                  ___moddi3
+ *fill*           0x001f5a          0x400
+ .libm.adddf3     0x001f5c         0xfc c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(adddf3.eo)
+                  0x001f5c                  ___adddf3
  .libm.dcompare
-                  0x001f4c         0x52 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(dcompare.eo)
-                  0x001f4c                  __dcompare
+                  0x002058         0x52 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(dcompare.eo)
+                  0x002058                  __dcompare
  .libm.dPropagateNaN
-                  0x001f9e         0x1c c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(dpropagateNaN.eo)
-                  0x001f9e                  __dPropagateNaN
- .libm.dtype      0x001fba         0x24 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(dtype.eo)
-                  0x001fba                  __dtype
- .libm.dunpack    0x001fde         0x4e c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(dunpack.eo)
-                  0x001fde                  __dunpack
+                  0x0020aa         0x1c c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(dpropagateNaN.eo)
+                  0x0020aa                  __dPropagateNaN
+ .libm.dtype      0x0020c6         0x24 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(dtype.eo)
+                  0x0020c6                  __dtype
+ .libm.dunpack    0x0020ea         0x4e c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(dunpack.eo)
+                  0x0020ea                  __dunpack
  .libm.floatdidf
-                  0x00202c         0x20 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(floatdidf.eo)
-                  0x00202c                  ___floatdidf
+                  0x002138         0x20 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(floatdidf.eo)
+                  0x002138                  ___floatdidf
  .libm.floatundidf
-                  0x00204c         0x56 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(floatundidf.eo)
-                  0x00204c                  ___floatundidf
+                  0x002158         0x56 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(floatundidf.eo)
+                  0x002158                  ___floatundidf
 
 usercode
  *(usercode)
@@ -730,40 +911,80 @@ __CONFIG1
 .comment
  *(.comment)
 
-.debug_info       0x000000       0x342a
+.debug_info       0x000000       0x6cb5
  *(.debug_info)
- .debug_info      0x000000        0x138 ./output/objects/main.o
- .debug_info      0x000138        0x446 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Mcu.o)
- .debug_info      0x00057e       0x2b8a ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Uart.o)
- .debug_info      0x003108        0x322 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Queue.o)
+ .debug_info      0x000000        0x2f7 ./output/objects/main.o
+ .debug_info      0x0002f7        0x1c7 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Main.o)
+ .debug_info      0x0004be        0x446 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Mcu.o)
+ .debug_info      0x000904        0x64b ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_SysTick.o)
+ .debug_info      0x000f4f        0x61f ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_PswKey.o)
+ .debug_info      0x00156e        0xa50 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Beep.o)
+ .debug_info      0x001fbe        0xf1a ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Adc.o)
+ .debug_info      0x002ed8        0x4db ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_LedBlink.o)
+ .debug_info      0x0033b3        0x706 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Led.o)
+ .debug_info      0x003ab9        0x350 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Psw.o)
+ .debug_info      0x003e09       0x2b8a ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Uart.o)
+ .debug_info      0x006993        0x322 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Queue.o)
  *(.gnu.linkonce.wi.*)
 
-.debug_abbrev     0x000000        0x4dd
+.debug_abbrev     0x000000        0xd90
  *(.debug_abbrev)
- .debug_abbrev    0x000000         0x61 ./output/objects/main.o
- .debug_abbrev    0x000061         0xd6 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Mcu.o)
- .debug_abbrev    0x000137        0x2e3 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Uart.o)
- .debug_abbrev    0x00041a         0xc3 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Queue.o)
+ .debug_abbrev    0x000000         0x94 ./output/objects/main.o
+ .debug_abbrev    0x000094         0x50 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Main.o)
+ .debug_abbrev    0x0000e4         0xd6 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Mcu.o)
+ .debug_abbrev    0x0001ba        0x14d ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_SysTick.o)
+ .debug_abbrev    0x000307        0x12c ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_PswKey.o)
+ .debug_abbrev    0x000433        0x18d ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Beep.o)
+ .debug_abbrev    0x0005c0        0x1cc ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Adc.o)
+ .debug_abbrev    0x00078c         0xd6 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_LedBlink.o)
+ .debug_abbrev    0x000862         0xc3 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Led.o)
+ .debug_abbrev    0x000925         0xc5 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Psw.o)
+ .debug_abbrev    0x0009ea        0x2e3 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Uart.o)
+ .debug_abbrev    0x000ccd         0xc3 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Queue.o)
 
-.debug_line       0x000000        0x5a1
+.debug_line       0x000000        0xff3
  *(.debug_line)
- .debug_line      0x000000         0x39 ./output/objects/main.o
- .debug_line      0x000039        0x103 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Mcu.o)
- .debug_line      0x00013c        0x38d ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Uart.o)
- .debug_line      0x0004c9         0xd8 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Queue.o)
+ .debug_line      0x000000        0x119 ./output/objects/main.o
+ .debug_line      0x000119         0xa1 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Main.o)
+ .debug_line      0x0001ba        0x103 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Mcu.o)
+ .debug_line      0x0002bd        0x144 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_SysTick.o)
+ .debug_line      0x000401        0x150 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_PswKey.o)
+ .debug_line      0x000551        0x17e ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Beep.o)
+ .debug_line      0x0006cf        0x18d ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Adc.o)
+ .debug_line      0x00085c        0x11b ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_LedBlink.o)
+ .debug_line      0x000977        0x12a ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Led.o)
+ .debug_line      0x000aa1         0xed ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Psw.o)
+ .debug_line      0x000b8e        0x38d ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Uart.o)
+ .debug_line      0x000f1b         0xd8 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Queue.o)
 
-.debug_frame      0x000000        0x72c
+.debug_frame      0x000000        0xdcc
  *(.debug_frame)
- .debug_frame     0x000000         0x2e ./output/objects/main.o
- .debug_frame     0x00002e         0x96 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Mcu.o)
- .debug_frame     0x0000c4        0x5d2 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Uart.o)
- .debug_frame     0x000696         0x96 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Queue.o)
+ .debug_frame     0x000000         0x82 ./output/objects/main.o
+ .debug_frame     0x000082         0x48 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Main.o)
+ .debug_frame     0x0000ca         0x96 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Mcu.o)
+ .debug_frame     0x000160        0x120 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_SysTick.o)
+ .debug_frame     0x000280         0xfe ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_PswKey.o)
+ .debug_frame     0x00037e        0x102 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Beep.o)
+ .debug_frame     0x000480        0x108 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Adc.o)
+ .debug_frame     0x000588         0xca ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_LedBlink.o)
+ .debug_frame     0x000652         0xca ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Led.o)
+ .debug_frame     0x00071c         0x48 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Psw.o)
+ .debug_frame     0x000764        0x5d2 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Uart.o)
+ .debug_frame     0x000d36         0x96 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Queue.o)
 
-.debug_str        0x000000        0x155
+.debug_str        0x000000        0x277
  *(.debug_str)
- .debug_str       0x000000          0xb ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Mcu.o)
- .debug_str       0x00000b        0x144 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Uart.o)
- .debug_str       0x00014f          0x6 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Queue.o)
+ .debug_str       0x000000          0x9 ./output/objects/main.o
+ .debug_str       0x000009          0xb ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Mcu.o)
+ .debug_str       0x000014         0x13 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_SysTick.o)
+ .debug_str       0x000027          0x9 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_PswKey.o)
+ .debug_str       0x000030         0x4a ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Beep.o)
+ .debug_str       0x00007a         0x74 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Adc.o)
+ .debug_str       0x0000ee          0xf ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_LedBlink.o)
+ .debug_str       0x0000fd         0x26 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Led.o)
+ .debug_str       0x000123          0xa ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Psw.o)
+ .debug_str       0x00012d        0x144 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Uart.o)
+ .debug_str       0x000271          0x6 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Queue.o)
 
 .debug_loc
  *(.debug_loc)
@@ -772,30 +993,62 @@ __CONFIG1
  *(.debug_macinfo)
 
 .debug_pubnames
-                  0x000000        0x549
+                  0x000000        0x9bc
  *(.debug_pubnames)
  .debug_pubnames
-                  0x000000         0x1b ./output/objects/main.o
+                  0x000000         0x2c ./output/objects/main.o
  .debug_pubnames
-                  0x00001b         0x66 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Mcu.o)
+                  0x00002c         0x3b ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Main.o)
  .debug_pubnames
-                  0x000081        0x46b ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Uart.o)
+                  0x000067         0x66 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Mcu.o)
  .debug_pubnames
-                  0x0004ec         0x5d ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Queue.o)
+                  0x0000cd         0xca ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_SysTick.o)
+ .debug_pubnames
+                  0x000197         0xc8 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_PswKey.o)
+ .debug_pubnames
+                  0x00025f         0x9e ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Beep.o)
+ .debug_pubnames
+                  0x0002fd         0xd0 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Adc.o)
+ .debug_pubnames
+                  0x0003cd         0x93 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_LedBlink.o)
+ .debug_pubnames
+                  0x000460         0x69 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Led.o)
+ .debug_pubnames
+                  0x0004c9         0x2b ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Psw.o)
+ .debug_pubnames
+                  0x0004f4        0x46b ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Uart.o)
+ .debug_pubnames
+                  0x00095f         0x5d ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Queue.o)
 
 .debug_ranges
  *(.debug_ranges)
 
-.debug_aranges    0x000000         0x60
+.debug_aranges    0x000000        0x120
  *(.debug_aranges)
  .debug_aranges
                   0x000000         0x18 ./output/objects/main.o
  .debug_aranges
-                  0x000018         0x18 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Mcu.o)
+                  0x000018         0x18 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Main.o)
  .debug_aranges
-                  0x000030         0x18 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Uart.o)
+                  0x000030         0x18 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Mcu.o)
  .debug_aranges
-                  0x000048         0x18 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Queue.o)
+                  0x000048         0x18 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_SysTick.o)
+ .debug_aranges
+                  0x000060         0x18 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_PswKey.o)
+ .debug_aranges
+                  0x000078         0x18 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Beep.o)
+ .debug_aranges
+                  0x000090         0x18 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Adc.o)
+ .debug_aranges
+                  0x0000a8         0x18 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_LedBlink.o)
+ .debug_aranges
+                  0x0000c0         0x18 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Led.o)
+ .debug_aranges
+                  0x0000d8         0x18 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Psw.o)
+ .debug_aranges
+                  0x0000f0         0x18 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Uart.o)
+ .debug_aranges
+                  0x000108         0x18 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Queue.o)
                     0x0000                  WREG0 = 0x0
                     0x0000                  _WREG0 = 0x0
                     0x0002                  WREG1 = 0x2
@@ -1383,167 +1636,230 @@ LOAD default_isr
 LOAD heap
 LOAD data_init
 
-__c30_signature
-                  0x000060        0x162
- __c30_signature
-                  0x000060          0x6 ./output/objects/main.o
- __c30_signature
-                  0x000066          0x6 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Mcu.o)
- __c30_signature
-                  0x00006c          0x6 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Uart.o)
- __c30_signature
-                  0x000072          0x6 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Queue.o)
- __c30_signature
-                  0x000078          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-pic30-elf.a(crt0_standard.o)
- __c30_signature
-                  0x00007e          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-pic30-elf.a(data_init_standard.o)
- __c30_signature
-                  0x000084          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(addsf3.eo)
- __c30_signature
-                  0x00008a          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(divsf3.eo)
- __c30_signature
-                  0x000090          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(fixunssfsi.eo)
- __c30_signature
-                  0x000096          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(floatunsisf.eo)
- __c30_signature
-                  0x00009c          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(fpack.eo)
- __c30_signature
-                  0x0000a2          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(funpack.eo)
- __c30_signature
-                  0x0000a8          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(funpack2.eo)
- __c30_signature
-                  0x0000ae          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(futil.eo)
- __c30_signature
-                  0x0000b4          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(floatundisf.eo)
- __c30_signature
-                  0x0000ba          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(free.XX_eo)
- __c30_signature
-                  0x0000c0          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(malloc.XX_eo)
- __c30_signature
-                  0x0000c6          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(strlen.XX_eo)
- __c30_signature
-                  0x0000cc          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xgetmem.XX_eo)
- __c30_signature
-                  0x0000d2          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(vsprintf.XX_eo)
- __c30_signature
-                  0x0000d8          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xprintf.XX_eo)
- __c30_signature
-                  0x0000de          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xputfld.XX_eo)
- __c30_signature
-                  0x0000e4          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(strchr.XX_elo)
- __c30_signature
-                  0x0000ea          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xvacopy.XX_elo)
- __c30_signature
-                  0x0000f0          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(memchr.XX_eo)
- __c30_signature
-                  0x0000f6          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(memcpy.XX_eo)
- __c30_signature
-                  0x0000fc          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xldtob.XX_eo)
- __c30_signature
-                  0x000102          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xldunsca.XX_eo)
- __c30_signature
-                  0x000108          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xlitob.XX_eo)
- __c30_signature
-                  0x00010e          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xputtxt.XX_eo)
- __c30_signature
-                  0x000114          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(ldiv.XX_elo)
- __c30_signature
-                  0x00011a          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xdnorm.XX_elo)
- __c30_signature
-                  0x000120          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xldscale.XX_elo)
- __c30_signature
-                  0x000126          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xgenld.XX_eo)
- __c30_signature
-                  0x00012c          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(div.XX_elo)
- __c30_signature
-                  0x000132          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-pic30-elf.a(sbrk.Leo)
- __c30_signature
-                  0x000138          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-pic30-elf.a(brk.Lelo)
- __c30_signature
-                  0x00013e          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(deqltle.eo)
- __c30_signature
-                  0x000144          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(dgtge.eo)
- __c30_signature
-                  0x00014a          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(divdf3.eo)
- __c30_signature
-                  0x000150          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(divsi3.eo)
- __c30_signature
-                  0x000156          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(dpack.eo)
- __c30_signature
-                  0x00015c          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(dunpack2.eo)
- __c30_signature
-                  0x000162          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(extendsfdf.eo)
- __c30_signature
-                  0x000168          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(fixdfsi.eo)
- __c30_signature
-                  0x00016e          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(floatsidf.eo)
- __c30_signature
-                  0x000174          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(muldf3.eo)
- __c30_signature
-                  0x00017a          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(subdf3.eo)
- __c30_signature
-                  0x000180          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(udivsi3.eo)
- __c30_signature
-                  0x000186          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(umodsi3.eo)
- __c30_signature
-                  0x00018c          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(mulsi3.eo)
- __c30_signature
-                  0x000192          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(divmoddi3.eo)
- __c30_signature
-                  0x000198          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(adddf3.eo)
- __c30_signature
-                  0x00019e          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(dcompare.eo)
- __c30_signature
-                  0x0001a4          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(dpropagateNaN.eo)
- __c30_signature
-                  0x0001aa          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(dtype.eo)
- __c30_signature
-                  0x0001b0          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(dunpack.eo)
- __c30_signature
-                  0x0001b6          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(floatdidf.eo)
- __c30_signature
-                  0x0001bc          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(floatundidf.eo)
-
 .debug_pubtypes
-                  0x0001c2        0x2ba
+                  0x000120        0x767
  .debug_pubtypes
-                  0x0001c2         0x40 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Mcu.o)
+                  0x000120         0x3c ./output/objects/main.o
  .debug_pubtypes
-                  0x000202        0x245 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Uart.o)
+                  0x00015c         0x1f ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Main.o)
  .debug_pubtypes
-                  0x000447         0x35 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Queue.o)
+                  0x00017b         0x40 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Mcu.o)
+ .debug_pubtypes
+                  0x0001bb         0x8f ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_SysTick.o)
+ .debug_pubtypes
+                  0x00024a         0x66 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_PswKey.o)
+ .debug_pubtypes
+                  0x0002b0         0xdf ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Beep.o)
+ .debug_pubtypes
+                  0x00038f        0x13d ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Adc.o)
+ .debug_pubtypes
+                  0x0004cc         0x54 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_LedBlink.o)
+ .debug_pubtypes
+                  0x000520         0xa3 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Led.o)
+ .debug_pubtypes
+                  0x0005c3         0x4a ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Psw.o)
+ .debug_pubtypes
+                  0x00060d        0x245 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Uart.o)
+ .debug_pubtypes
+                  0x000852         0x35 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Queue.o)
 
-.data               0x0800         0x7a
- .data              0x0800         0x7a c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xldtob.XX_eo)
+__c30_signature
+                  0x000887        0x1bc
+ __c30_signature
+                  0x000887          0x6 ./output/objects/main.o
+ __c30_signature
+                  0x00088d          0x6 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Main.o)
+ __c30_signature
+                  0x000893          0x6 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Mcu.o)
+ __c30_signature
+                  0x000899          0x6 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_SysTick.o)
+ __c30_signature
+                  0x00089f          0x6 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_PswKey.o)
+ __c30_signature
+                  0x0008a5          0x6 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Beep.o)
+ __c30_signature
+                  0x0008ab          0x6 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Adc.o)
+ __c30_signature
+                  0x0008b1          0x6 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_LedBlink.o)
+ __c30_signature
+                  0x0008b7          0x6 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Led.o)
+ __c30_signature
+                  0x0008bd          0x6 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Psw.o)
+ __c30_signature
+                  0x0008c3          0x6 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Uart.o)
+ __c30_signature
+                  0x0008c9          0x6 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Queue.o)
+ __c30_signature
+                  0x0008cf          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-pic30-elf.a(crt0_standard.o)
+ __c30_signature
+                  0x0008d5          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-pic30-elf.a(data_init_standard.o)
+ __c30_signature
+                  0x0008db          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(addsf3.eo)
+ __c30_signature
+                  0x0008e1          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(divsf3.eo)
+ __c30_signature
+                  0x0008e7          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(feqltle.eo)
+ __c30_signature
+                  0x0008ed          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(fgtge.eo)
+ __c30_signature
+                  0x0008f3          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(fixunssfsi.eo)
+ __c30_signature
+                  0x0008f9          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(floatsisf.eo)
+ __c30_signature
+                  0x0008ff          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(floatunsisf.eo)
+ __c30_signature
+                  0x000905          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(fne.eo)
+ __c30_signature
+                  0x00090b          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(fpack.eo)
+ __c30_signature
+                  0x000911          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(funpack.eo)
+ __c30_signature
+                  0x000917          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(funpack2.eo)
+ __c30_signature
+                  0x00091d          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(futil.eo)
+ __c30_signature
+                  0x000923          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(mulsf3.eo)
+ __c30_signature
+                  0x000929          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(fcompare.eo)
+ __c30_signature
+                  0x00092f          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(floatdisf.eo)
+ __c30_signature
+                  0x000935          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(floatundisf.eo)
+ __c30_signature
+                  0x00093b          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(free.XX_eo)
+ __c30_signature
+                  0x000941          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(malloc.XX_eo)
+ __c30_signature
+                  0x000947          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(strlen.XX_eo)
+ __c30_signature
+                  0x00094d          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xgetmem.XX_eo)
+ __c30_signature
+                  0x000953          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(vsprintf.XX_eo)
+ __c30_signature
+                  0x000959          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xprintf.XX_eo)
+ __c30_signature
+                  0x00095f          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xputfld.XX_eo)
+ __c30_signature
+                  0x000965          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(strchr.XX_elo)
+ __c30_signature
+                  0x00096b          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xvacopy.XX_elo)
+ __c30_signature
+                  0x000971          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(memchr.XX_eo)
+ __c30_signature
+                  0x000977          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(memcpy.XX_eo)
+ __c30_signature
+                  0x00097d          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xldtob.XX_eo)
+ __c30_signature
+                  0x000983          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xldunsca.XX_eo)
+ __c30_signature
+                  0x000989          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xlitob.XX_eo)
+ __c30_signature
+                  0x00098f          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xputtxt.XX_eo)
+ __c30_signature
+                  0x000995          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(ldiv.XX_elo)
+ __c30_signature
+                  0x00099b          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xdnorm.XX_elo)
+ __c30_signature
+                  0x0009a1          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xldscale.XX_elo)
+ __c30_signature
+                  0x0009a7          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xgenld.XX_eo)
+ __c30_signature
+                  0x0009ad          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(div.XX_elo)
+ __c30_signature
+                  0x0009b3          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-pic30-elf.a(sbrk.Leo)
+ __c30_signature
+                  0x0009b9          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-pic30-elf.a(brk.Lelo)
+ __c30_signature
+                  0x0009bf          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(deqltle.eo)
+ __c30_signature
+                  0x0009c5          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(dgtge.eo)
+ __c30_signature
+                  0x0009cb          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(divdf3.eo)
+ __c30_signature
+                  0x0009d1          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(divsi3.eo)
+ __c30_signature
+                  0x0009d7          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(dpack.eo)
+ __c30_signature
+                  0x0009dd          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(dunpack2.eo)
+ __c30_signature
+                  0x0009e3          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(extendsfdf.eo)
+ __c30_signature
+                  0x0009e9          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(fixdfsi.eo)
+ __c30_signature
+                  0x0009ef          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(floatsidf.eo)
+ __c30_signature
+                  0x0009f5          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(muldf3.eo)
+ __c30_signature
+                  0x0009fb          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(subdf3.eo)
+ __c30_signature
+                  0x000a01          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(udivsi3.eo)
+ __c30_signature
+                  0x000a07          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(umodsi3.eo)
+ __c30_signature
+                  0x000a0d          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(mulsi3.eo)
+ __c30_signature
+                  0x000a13          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(divmoddi3.eo)
+ __c30_signature
+                  0x000a19          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(adddf3.eo)
+ __c30_signature
+                  0x000a1f          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(dcompare.eo)
+ __c30_signature
+                  0x000a25          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(dpropagateNaN.eo)
+ __c30_signature
+                  0x000a2b          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(dtype.eo)
+ __c30_signature
+                  0x000a31          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(dunpack.eo)
+ __c30_signature
+                  0x000a37          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(floatdidf.eo)
+ __c30_signature
+                  0x000a3d          0x6 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(floatundidf.eo)
 
-.bss                0x087a         0x74
- .bss               0x087a         0x74 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Uart.o)
-                    0x087a                  _u1
-                    0x089c                  _u2
-                    0x08be                  _u1rxqueue
-                    0x08ca                  _u1txqueue
-                    0x08d6                  _u2rxqueue
-                    0x08e2                  _u2txqueue
+.nbss               0x0800         0x10
+ .nbss              0x0800          0x8 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Adc.o)
+ .nbss              0x0808          0x6 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_SysTick.o)
+ .nbss              0x080e          0x2 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Main.o)
 
-.data               0x08ee         0x3c
- .data              0x08ee         0x22 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xlitob.XX_eo)
- .data              0x0910         0x1a c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xprintf.XX_eo)
+.data               0x0810         0x7a
+ .data              0x0810         0x7a c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xldtob.XX_eo)
 
-.bss                0x092a          0x4
- .bss               0x092a          0x4 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(malloc.XX_eo)
-                    0x092a                  __Aldata
+.bss                0x088a        0x174
+ .bss               0x088a         0x74 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Uart.o)
+                    0x088a                  _u1
+                    0x08ac                  _u2
+                    0x08ce                  _u1rxqueue
+                    0x08da                  _u1txqueue
+                    0x08e6                  _u2rxqueue
+                    0x08f2                  _u2txqueue
+ .bss               0x08fe         0x68 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_PswKey.o)
+ .bss               0x0966         0x50 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_LedBlink.o)
+ .bss               0x09b6         0x48 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Adc.o)
 
-.data               0x092e          0x4
- .data              0x092e          0x2 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(malloc.XX_eo)
-                    0x092e                  __Size_block
- .data              0x0930          0x2 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xgenld.XX_eo)
+.data               0x09fe         0x3c
+ .data              0x09fe         0x22 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xlitob.XX_eo)
+ .data              0x0a20         0x1a c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xprintf.XX_eo)
 
-.bss                0x0932          0x2
- .bss               0x0932          0x2 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-pic30-elf.a(brk.Lelo)
-                    0x0932                  ___curbrk
+.bss                0x0a3a         0x1e
+ .bss               0x0a3a         0x14 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Beep.o)
+ .bss               0x0a4e          0x6 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_SysTick.o)
+ .bss               0x0a54          0x4 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(malloc.XX_eo)
+                    0x0a54                  __Aldata
 
-.heap               0x0934        0xc18
- .heap              0x0934        0xc18 heap
+.data               0x0a58          0x4
+ .data              0x0a58          0x2 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(malloc.XX_eo)
+                    0x0a58                  __Size_block
+ .data              0x0a5a          0x2 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-c-elf.a(xgenld.XX_eo)
+
+.bss                0x0a5c          0x2
+ .bss               0x0a5c          0x2 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-pic30-elf.a(brk.Lelo)
+                    0x0a5c                  ___curbrk
+
+.heap               0x0a5e        0xc18
+ .heap              0x0a5e        0xc18 heap
+
+.ivt._T1Interrupt
+                  0x00001a          0x2
+ .ivt._T1Interrupt
+                  0x00001a          0x2 ./output/objects/main.o
 
 .config_JTAGEN    0x0083fe          0x2
  .config_JTAGEN
@@ -1551,6 +1867,11 @@ __c30_signature
 
 .config_IESO      0x0083fc          0x2
  .config_IESO     0x0083fc          0x2 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Mcu.o)
+
+.ivt._ADC1Interrupt
+                  0x00002e          0x2
+ .ivt._ADC1Interrupt
+                  0x00002e          0x2 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Adc.o)
 
 .ivt._U1RXInterrupt
                   0x00002a          0x2
@@ -1572,73 +1893,134 @@ __c30_signature
  .ivt._U2TXInterrupt
                   0x000052          0x2 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Uart.o)
 
-.const              0xa0a2         0x54 load address 0x0020a2  
- .const             0xa0a2         0x44 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Uart.o)
- .const             0xa0e6         0x10 ./output/objects/main.o
+.const              0xa1ae         0xd0 load address 0x0021ae  
+ .const             0xa1ae         0x44 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Uart.o)
+ .const             0xa1f2         0x36 ./output/objects/main.o
+ .const             0xa228         0x2c ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Beep.o)
+ .const             0xa254         0x2a ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_PswKey.o)
 
-.text             0x0020f6        0xf20
- .text            0x0020f6        0xdce ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Uart.o)
-                  0x0021fe                  _Uart1_SetTxBuffer
-                  0x002210                  _Uart1_SetRxBuffer
-                  0x002222                  _Uart2_SetTxBuffer
-                  0x002234                  _Uart2_SetRxBuffer
-                  0x002246                  _Uart1_Init
-                  0x002322                  _Uart2_Init
-                  0x0023fe                  _Uart_Init
-                  0x002430                  _Uart1_Put
-                  0x002448                  _Uart2_Put
-                  0x002460                  _Uart1_Get
-                  0x002486                  _Uart2_Get
-                  0x0024ac                  _Uart1_Write
-                  0x0024e0                  _Uart2_Write
-                  0x002514                  _Uart1_WriteBytes
-                  0x002550                  _Uart2_WriteBytes
-                  0x00258c                  _Uart1_PutAsync
-                  0x0025da                  _Uart2_PutAsync
-                  0x002628                  _Uart1_WriteAsync
-                  0x0026d6                  _Uart2_WriteAsync
-                  0x002782                  _Uart1_GetTxBufferSpace
-                  0x002792                  _Uart2_GetTxBufferSpace
-                  0x0027a2                  _Uart1_ClearTxBuffer
-                  0x0027dc                  _Uart2_ClearTxBuffer
-                  0x002816                  _Uart1_ClearRxBuffer
-                  0x002850                  _Uart2_ClearRxBuffer
-                  0x00288a                  _Uart1_Printf
-                  0x0028d0                  _Uart1_PrintfAsync
-                  0x002916                  _Uart2_Printf
-                  0x00295c                  _Uart2_PrintfAsync
-                  0x0029a2                  _Uart_Printf
-                  0x0029fc                  _Uart_PrintfAsync
-                  0x002a56                  _Uart1_SetRxIsrCallback
-                  0x002a62                  _Uart2_SetRxIsrCallback
-                  0x002a6e                  _Uart1_SetRxCallback
-                  0x002a7a                  _Uart2_SetRxCallback
-                  0x002a86                  _Uart1_SetTxCallback
-                  0x002a92                  _Uart2_SetTxCallback
-                  0x002ada                  _Uart1_SetRxLineCallback
-                  0x002aec                  _Uart2_SetRxLineCallback
-                  0x002afe                  _Uart1_SetBufferFullCallback
-                  0x002b0a                  _Uart2_SetBufferFullCallback
-                  0x002c6a                  _Uart1_ClearLineBuffer
-                  0x002caa                  _Uart2_ClearLineBuffer
-                  0x002cea                  _Uart1_Executor
-                  0x002dd2                  _Uart2_Executor
- .text            0x002ec4        0x152 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Queue.o)
-                  0x002ec4                  _Queue_Init
-                  0x002f0e                  _Queue_Put
-                  0x002f6a                  _Queue_Get
-                  0x002fca                  _Queue_Space
-                  0x002fdc                  _Queue_Reset
+.text             0x00227e       0x1fb0
+ .text            0x00227e        0xdce ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Uart.o)
+                  0x002386                  _Uart1_SetTxBuffer
+                  0x002398                  _Uart1_SetRxBuffer
+                  0x0023aa                  _Uart2_SetTxBuffer
+                  0x0023bc                  _Uart2_SetRxBuffer
+                  0x0023ce                  _Uart1_Init
+                  0x0024aa                  _Uart2_Init
+                  0x002586                  _Uart_Init
+                  0x0025b8                  _Uart1_Put
+                  0x0025d0                  _Uart2_Put
+                  0x0025e8                  _Uart1_Get
+                  0x00260e                  _Uart2_Get
+                  0x002634                  _Uart1_Write
+                  0x002668                  _Uart2_Write
+                  0x00269c                  _Uart1_WriteBytes
+                  0x0026d8                  _Uart2_WriteBytes
+                  0x002714                  _Uart1_PutAsync
+                  0x002762                  _Uart2_PutAsync
+                  0x0027b0                  _Uart1_WriteAsync
+                  0x00285e                  _Uart2_WriteAsync
+                  0x00290a                  _Uart1_GetTxBufferSpace
+                  0x00291a                  _Uart2_GetTxBufferSpace
+                  0x00292a                  _Uart1_ClearTxBuffer
+                  0x002964                  _Uart2_ClearTxBuffer
+                  0x00299e                  _Uart1_ClearRxBuffer
+                  0x0029d8                  _Uart2_ClearRxBuffer
+                  0x002a12                  _Uart1_Printf
+                  0x002a58                  _Uart1_PrintfAsync
+                  0x002a9e                  _Uart2_Printf
+                  0x002ae4                  _Uart2_PrintfAsync
+                  0x002b2a                  _Uart_Printf
+                  0x002b84                  _Uart_PrintfAsync
+                  0x002bde                  _Uart1_SetRxIsrCallback
+                  0x002bea                  _Uart2_SetRxIsrCallback
+                  0x002bf6                  _Uart1_SetRxCallback
+                  0x002c02                  _Uart2_SetRxCallback
+                  0x002c0e                  _Uart1_SetTxCallback
+                  0x002c1a                  _Uart2_SetTxCallback
+                  0x002c62                  _Uart1_SetRxLineCallback
+                  0x002c74                  _Uart2_SetRxLineCallback
+                  0x002c86                  _Uart1_SetBufferFullCallback
+                  0x002c92                  _Uart2_SetBufferFullCallback
+                  0x002df2                  _Uart1_ClearLineBuffer
+                  0x002e32                  _Uart2_ClearLineBuffer
+                  0x002e72                  _Uart1_Executor
+                  0x002f5a                  _Uart2_Executor
+ .text            0x00304c        0x4b6 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_PswKey.o)
+                  0x003206                  _Psw_SetKeyDownCallback
+                  0x003274                  _Psw_SetKeyHoldCallback
+                  0x0032e2                  _Psw_SetKeyLockCallback
+                  0x003350                  _Psw_SetKeyUpCallback
+                  0x0033be                  _Psw_SetKeyChangedCallback
+                  0x00342c                  _Psw_GetKeyState
+                  0x003442                  _PSW_KeyTickedExecutor
+ .text            0x003502        0x2c2 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Beep.o)
+                  0x003502                  _Beep_Init
+                  0x00356a                  _Beep_SetFrequency
+                  0x003696                  _Beep_SetPower
+                  0x0036c8                  _Beep
+                  0x0036f8                  _Beep_Play
+                  0x00370e                  _Beep_Generate
+                  0x00372e                  _Beep_SetCallback
+                  0x00373a                  _BEEP_TickedExecutor
+ .text            0x0037c4        0x2ac ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Led.o)
+                  0x0037c4                  _Led_Set
+                  0x0037f6                  _Led_Clr
+                  0x003828                  _Led_Wrt
+                  0x003884                  _Led_Inv
+                  0x003958                  _Led_Get
+                  0x0039bc                  _Led_Write
+                  0x003a34                  _Led_Read
+ .text            0x003a70        0x2a0 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_LedBlink.o)
+                  0x003a70                  _Led_BlinkInit
+                  0x003abe                  _Led_Flash
+                  0x003b0e                  _Led_Blink
+                  0x003b60                  _Led_Pwm
+                  0x003bc8                  _Led_SetChangedCallback
+                  0x003be0                  _Led_SetMode
+                  0x003bf8                  _LED_BlinkTickedExecutor
+ .text            0x003d10        0x28a ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Adc.o)
+                  0x003d10                  _Adc_Init
+                  0x003dda                  _Adc_Get
+                  0x003e1c                  _Adc_GetVoltage
+                  0x003e4c                  _Adc_GetPercentage
+                  0x003e74                  _Adc_SetChangedCallback
+                  0x003e8c                  _Adc_SetChangedThreshold
+                  0x003ea4                  _Adc_SetChangedInterval
+                  0x003ebc                  _ADC_TickedExecutor
+ .text            0x003f9a        0x152 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Queue.o)
+                  0x003f9a                  _Queue_Init
+                  0x003fe4                  _Queue_Put
+                  0x004040                  _Queue_Get
+                  0x0040a0                  _Queue_Space
+                  0x0040b2                  _Queue_Reset
+ .text            0x0040ec        0x142 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_SysTick.o)
+                  0x0040ec                  _Sys_IsrPerformTick
+                  0x004168                  _Sys_Start
+                  0x004170                  _Sys_Stop
+                  0x004178                  _Sys_SetTickCallback
+                  0x004184                  _Sys_GetTicks
+                  0x00418e                  _Sys_GetTimeMilli
+                  0x0041b2                  _Sys_GetTimeMicro
+                  0x0041da                  _Sys_GetClock
+                  0x0041ea                  _Sys_SetClock
+                  0x004210                  _Sys_TickInit
 
-.dinit            0x003016         0xb2
- .dinit           0x003016         0xb2 data_init
+.dinit            0x00422e         0xe2
+ .dinit           0x00422e         0xe2 data_init
 
-.text             0x0030c8         0x80
- .text            0x0030c8         0x6c ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Mcu.o)
-                  0x0030c8                  _Mcu_IoInit
-                  0x0030ea                  _Mcu_ClockInit
-                  0x003106                  _Mcu_UnlockRemap
-                  0x003118                  _Mcu_LockRemap
-                  0x00312a                  _Mcu_Init
- .text            0x003134         0x14 ./output/objects/main.o
-                  0x003134                  _main
+.text             0x004310        0x130
+ .text            0x004310         0x7a ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Psw.o)
+                  0x004310                  _Psw_Get
+                  0x00437a                  _Psw_Read
+ .text            0x00438a         0x6c ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Mcu.o)
+                  0x00438a                  _Mcu_IoInit
+                  0x0043ac                  _Mcu_ClockInit
+                  0x0043c8                  _Mcu_UnlockRemap
+                  0x0043da                  _Mcu_LockRemap
+                  0x0043ec                  _Mcu_Init
+ .text            0x0043f6         0x2e ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Main.o)
+                  0x0043f6                  _BSP_TickIsrExecutor
+                  0x004402                  _BSP_Executor
+ .text            0x004424         0x1c ./output/objects/main.o
+                  0x004424                  _main

@@ -26,5 +26,7 @@
 #include <BSP_Adc.h>
 #include <BSP_PswKey.h>
 #include <BSP_LedBlink.h>
+//
+#include <BSP_SysCore.h>
 
 #endif

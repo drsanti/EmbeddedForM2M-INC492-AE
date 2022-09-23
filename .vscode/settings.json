@@ -48,5 +48,8 @@
 		"TRIS",
 		"TXIE",
 		"Uartx"
-	]
+	],
+	"editor.formatOnPaste": false,
+	"editor.formatOnSave": false,
+	"editor.formatOnType": false,
 }

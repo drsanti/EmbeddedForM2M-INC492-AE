@@ -2,6 +2,7 @@
 #include "BSP_Main.h"
 #include "BSP_SysTick.h"
 #include "BSP_Uart.h"
+#include "rtl.h"
 
 void __attribute__((interrupt, auto_psv)) _T1Interrupt(void)
 {
@@ -21,7 +22,7 @@ void __attribute__((interrupt, auto_psv)) _T1Interrupt(void)
 	/*********************************
 	 * RTL_TickIsrExecutor
 	 *********************************/
-	// RTL_TickIsrExecutor();
+	RTL_TickIsrExecutor();
 }
 
 #define System_Init() {			\
@@ -33,5 +34,6 @@ void __attribute__((interrupt, auto_psv)) _T1Interrupt(void)
 	Sys_Start();			\
 	while(1) {				\
 		BSP_Executor(); 	\
+		RTL_Executor();		\
 	}						\
 }

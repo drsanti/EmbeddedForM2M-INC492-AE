@@ -15,7 +15,7 @@ void system_tick(void *ticks) {
 	
 }
 
-
+// ecc-pic24-cli -build
 int main()
 {
 	System_Init();

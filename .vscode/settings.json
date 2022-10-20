@@ -27,7 +27,8 @@
 		"sha1.h": "c",
 		"esp_webserver.h": "c",
 		"http_server.h": "c",
-		"esp_httpcmdex.h": "c"
+		"esp_httpcmdex.h": "c",
+		"rtl_config.h": "c"
 	},
 	"C_Cpp.errorSquiggles": "Disabled",
 	"C_Cpp.loggingLevel": "Debug",

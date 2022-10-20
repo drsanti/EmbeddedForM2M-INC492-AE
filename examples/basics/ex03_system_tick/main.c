@@ -7,12 +7,11 @@ void system_tick(void *ticks) {
 
 	static uint32_t cnt = 0;
 
-	if(++cnt >= 1000) {
+	if(++cnt >= 2000) {
 		cnt = 0;
 		uint16_t x = *((uint16_t *)ticks);
 		Uart1_Printf("ticks: %u\r\n",x);
 	}
-	
 }
 
 // ecc-pic24-cli -build

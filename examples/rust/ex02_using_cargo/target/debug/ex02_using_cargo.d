@@ -1,0 +1,1 @@
+D:\_DATA_\KMUTT\CLASSES\1-2565\INC492-AE\EmbeddedForM2M-INC492-AE\examples\rust\ex02_using_cargo\target\debug\ex02_using_cargo.exe: D:\_DATA_\KMUTT\CLASSES\1-2565\INC492-AE\EmbeddedForM2M-INC492-AE\examples\rust\ex02_using_cargo\src\main.rs

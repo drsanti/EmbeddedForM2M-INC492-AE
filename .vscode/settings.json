@@ -34,6 +34,7 @@
 	"C_Cpp.loggingLevel": "Debug",
 	"cSpell.words": [
 		"Abits",
+		"BAUDRATE",
 		"DINP",
 		"DOUT",
 		"FOSC",
@@ -48,7 +49,8 @@
 		"SSID",
 		"TRIS",
 		"TXIE",
-		"Uartx"
+		"Uartx",
+		"VSPD"
 	],
 	"editor.formatOnPaste": false,
 	"editor.formatOnSave": false,

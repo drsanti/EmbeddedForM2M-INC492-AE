@@ -1,0 +1,1 @@
+D:\_DATA_\KMUTT\CLASSES\1-2565\INC492-AE\EmbeddedForM2M-INC492-AE\examples\rust\ex07_keyboard\target\debug\ex07_keyboard.exe: D:\_DATA_\KMUTT\CLASSES\1-2565\INC492-AE\EmbeddedForM2M-INC492-AE\examples\rust\ex07_keyboard\src\main.rs
